@@ -10,7 +10,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 --------------------------------------------------------- */
 window.AUREVIA_CONFIG = {
   API_BASE_LOCAL: "http://127.0.0.1:5000",
-  API_BASE_PRODUCTION: "https://aurevia-website-m6fa.vercel.app"
+  API_BASE_PRODUCTION: "https://aurevia-backend-lilac.vercel.app"
 };
 
 const API_BASE = (function () {
