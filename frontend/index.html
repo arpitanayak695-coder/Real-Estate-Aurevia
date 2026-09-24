@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUREVIA — Exceptional Residences</title>
+<meta name="description" content="AUREVIA is a premium real-estate studio curating architecturally significant residences, private estates and investment properties.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand" aria-label="AUREVIA home">
+      <svg class="navbar__logo" viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <path d="M20 3 L36 15 V36 H24 V24 H16 V36 H4 V15 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M20 3 L36 15" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span class="navbar__wordmark">AUREVIA</span>
+    </a>
+
+    <nav class="navbar__nav" id="primaryNav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#properties">Properties</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--ghost navbar__cta">Contact</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#properties">Properties</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn--solid">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <img src="https://images.unsplash.com/photo-1642447260162-8d52ac4348ad?auto=format&fit=crop&w=2400&q=80" alt="Illuminated contemporary residence photographed at dusk" loading="eager">
+    <div class="hero__scrim"></div>
+  </div>
+
+  <div class="hero__title-container">
+    <svg class="cutout-svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <mask id="text-mask">
+          <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" />
+          <text x="50%" y="35%" text-anchor="middle" dominant-baseline="central" class="svg-text-cutout">
+            AUREVIA
+          </text>
+        </mask>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="rgba(0, 0, 0, 0.3)" mask="url(#text-mask)" />
+      <text x="50%" y="35%" text-anchor="middle" dominant-baseline="central" class="svg-text-stroke">
+        AUREVIA
+      </text>
+    </svg>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">The world of</p>
+    <h2 class="hero__subhead">Exceptional Living</h2>
+    <p class="hero__desc">Discover thoughtfully designed residences where architecture, comfort and contemporary living come together.</p>
+    <a href="#properties" class="btn btn--solid">Explore Properties</a>
+  </div>
+
+  <a href="#intro" class="hero__scroll" aria-label="Scroll to content">
+    <span></span>
+    Scroll
+  </a>
+</section>
+
+<!-- ================= INTRO STRIP ================= -->
+<section class="intro" id="intro">
+  <p class="intro__text">
+    For eighteen years, AUREVIA has represented residences defined by material honesty and architectural clarity —
+    homes built to be lived in, not merely photographed.
+  </p>
+</section>
+
+<!-- ================= DARK RESIDENCE SHOWCASE ================= -->
+<section class="showcase">
+  <div class="showcase__grid">
+    <div class="showcase__media reveal">
+      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80" alt="The Ellery House, a private residence with a concrete and glass facade" loading="lazy">
+    </div>
+    <div class="showcase__content reveal">
+      <p class="showcase__eyebrow">Featured residence</p>
+      <h3 class="showcase__title">The Ellery House</h3>
+      <p class="showcase__tag">Designed for modern living</p>
+      <p class="showcase__desc">
+        Set above a quiet ridge outside the city, The Ellery House pairs board-formed concrete with wide
+        expanses of glass, opening every principal room to the landscape beyond.
+      </p>
+      <ul class="specs">
+        <li><span>4</span>Bedrooms</li>
+        <li><span>5</span>Bathrooms</li>
+        <li><span>4,200</span>sq.ft.</li>
+        <li><span>—</span>Private Garden</li>
+        <li><span>—</span>Infinity Pool</li>
+        <li><span>—</span>Smart Home</li>
+      </ul>
+      <a href="#properties" class="link-arrow">View Residence</a>
+    </div>
+  </div>
+
+  <!-- Curved divider -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <path d="M0,32 C 240,110 480,0 720,40 C 960,80 1200,10 1440,60 L1440,140 L0,140 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Floating stat card -->
+  <div class="stat-card reveal">
+    <span class="stat-card__num">41%</span>
+    <span class="stat-card__label">Average energy&nbsp;savings<br>in AUREVIA-built homes</span>
+  </div>
+</section>
+
+<!-- ================= PROPERTY DISCOVERY ================= -->
+<section class="properties" id="properties">
+  <div class="section-head">
+    <h2>Discover Your Next Home</h2>
+    <p>A curated selection of residences currently represented by AUREVIA, from courtyard houses to waterfront estates.</p>
+  </div>
+
+  <div class="property-grid" id="propertyGrid">
+    <!-- Cards injected by JS from data in main.js, with a static fallback below for no-JS -->
+  </div>
+</section>
+
+<!-- Property details modal -->
+<div class="modal" id="propertyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <button class="modal__close" data-close aria-label="Close property details">&times;</button>
+    <div class="modal__body" id="modalBody">
+      <!-- injected -->
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="section-head">
+    <h2>Services</h2>
+    <p>End-to-end guidance across every stage of finding, financing and living in an exceptional home.</p>
+  </div>
+  <div class="services__grid">
+    <div class="service-card reveal">
+      <span class="service-card__num">01</span>
+      <h3>Property Buying</h3>
+      <p>Private access to off-market listings and hands-on guidance from search through closing.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-card__num">02</span>
+      <h3>Property Selling</h3>
+      <p>Strategic positioning, editorial photography and a curated buyer network for a confident sale.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-card__num">03</span>
+      <h3>Luxury Rentals</h3>
+      <p>Fully managed leases on architecturally significant homes, short and long term.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-card__num">04</span>
+      <h3>Investment Consulting</h3>
+      <p>Portfolio strategy grounded in market data, yield modelling and long-range planning.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-card__num">05</span>
+      <h3>Property Management</h3>
+      <p>Day-to-day stewardship — maintenance, staffing and reporting — for owners who live elsewhere.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-card__num">06</span>
+      <h3>Architecture &amp; Design Advisory</h3>
+      <p>A network of architects and studios for renovation, extension and new-build projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about__grid">
+    <div class="about__content reveal">
+      <p class="section-eyebrow">About AUREVIA</p>
+      <h2>A studio built around fewer, better addresses</h2>
+      <p>
+        AUREVIA began in 2008 as a two-person practice matching architects with discerning buyers.
+        Today we represent a small, carefully vetted portfolio of residences across the country —
+        never more than we can know in detail.
+      </p>
+      <p>
+        Our mission is simple: treat every transaction the way we'd want our own home handled —
+        with patience, discretion and a genuine eye for the building itself.
+      </p>
+    </div>
+    <div class="about__stats reveal">
+      <div class="stat"><strong>18+</strong><span>Years Experience</span></div>
+      <div class="stat"><strong>260+</strong><span>Properties Delivered</span></div>
+      <div class="stat"><strong>190+</strong><span>Happy Clients</span></div>
+      <div class="stat"><strong>12</strong><span>Cities Represented</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="projects" id="projects">
+  <div class="section-head section-head--light">
+    <h2>Featured Projects</h2>
+    <p>New developments we're proud to represent, from groundbreaking to move-in ready.</p>
+  </div>
+  <div class="projects__grid">
+    <article class="project-card reveal">
+      <img src="https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?auto=format&fit=crop&w=900&q=80" alt="Ridgeline Terraces development, a white concrete terraced building" loading="lazy">
+      <div class="project-card__body">
+        <span class="project-card__status">Under construction</span>
+        <h3>Ridgeline Terraces</h3>
+        <p>Lake District — 14 terraced residences stepped into the hillside, completing 2027.</p>
+        <a href="#contact" class="link-arrow">Enquire</a>
+      </div>
+    </article>
+    <article class="project-card reveal">
+      <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?auto=format&fit=crop&w=900&q=80" alt="Marram Dunes development at dusk" loading="lazy">
+      <div class="project-card__body">
+        <span class="project-card__status">Move-in ready</span>
+        <h3>Marram Dunes</h3>
+        <p>Coastal Bluffs — 8 single-storey homes framed around a shared dune garden.</p>
+        <a href="#contact" class="link-arrow">Enquire</a>
+      </div>
+    </article>
+    <article class="project-card reveal">
+      <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=900&q=80" alt="Kestrel Yards development, a two-storey converted building" loading="lazy">
+      <div class="project-card__body">
+        <span class="project-card__status">Reserving now</span>
+        <h3>Kestrel Yards</h3>
+        <p>Old Mill District — 22 converted warehouse lofts with private courtyards.</p>
+        <a href="#contact" class="link-arrow">Enquire</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="testimonials__track">
+    <blockquote class="reveal">
+      <p>“AUREVIA found us a house we didn't know we were looking for, then handled everything so quietly we barely noticed the sale happen.”</p>
+      <cite>— R. Whitfield, The Ellery House</cite>
+    </blockquote>
+    <blockquote class="reveal">
+      <p>“Genuinely knowledgeable about the buildings themselves, not just the listings. That's rare.”</p>
+      <cite>— M. Solano, Marram Dunes</cite>
+    </blockquote>
+    <blockquote class="reveal">
+      <p>“Our management team has never had to chase them for an update. Everything arrives before we ask.”</p>
+      <cite>— J. Okonkwo, Investment Client</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__info reveal">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2>Let's talk about your next home</h2>
+      <p>Send us a note and a member of our team will respond within one business day.</p>
+      <ul class="contact__details">
+        <li><strong>Email</strong><a href="mailto:hello@aurevia-homes.com">hello@aurevia-homes.com</a></li>
+        <li><strong>Phone</strong><a href="tel:+18005551234">+1 (800) 555-1234</a></li>
+        <li><strong>Office</strong><span>140 Harbour Row, Suite 4, Port Haven</span></li>
+        <li><strong>Hours</strong><span>Mon – Fri, 9:00 – 18:00</span></li>
+      </ul>
+    </div>
+
+    <form class="contact__form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="form-row">
+        <label for="property">Property of interest</label>
+        <select id="property" name="property">
+          <option value="">General enquiry</option>
+          <option>The Ellery House</option>
+          <option>Ridgeline Terraces</option>
+          <option>Marram Dunes</option>
+          <option>Kestrel Yards</option>
+        </select>
+      </div>
+      <div class="form-row form-row--full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="form-row form-row--full">
+        <button type="submit" class="btn btn--solid" id="submitBtn">Send Inquiry</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <span class="navbar__wordmark">AUREVIA</span>
+      <p>Exceptional residences, represented with care.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#properties">Properties</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__links">
+      <h4>Contact</h4>
+      <a href="mailto:hello@aurevia-homes.com">hello@aurevia-homes.com</a>
+      <a href="tel:+18005551234">+1 (800) 555-1234</a>
+      <span>140 Harbour Row, Port Haven</span>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> AUREVIA. All rights reserved.</span>
+    <span>Developed by Arpita Nayak [suusriAI]</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
