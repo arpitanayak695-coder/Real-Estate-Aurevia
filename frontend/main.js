@@ -1,13 +1,6 @@
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ---------------------------------------------------------
-   Backend API base.
-   Automatically uses the local Flask server when the site is
-   opened on localhost/127.0.0.1, and the live Vercel backend
-   otherwise. Update API_BASE_PRODUCTION if the backend's
-   deployment URL ever changes.
---------------------------------------------------------- */
 window.AUREVIA_CONFIG = {
   API_BASE_LOCAL: "http://127.0.0.1:5000",
   API_BASE_PRODUCTION: "https://aurevia-backend-lilac.vercel.app"
